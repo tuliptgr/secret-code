@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>TulipTGR | Secret</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <script src="js/script.js"></script>
+</head>
+
+
+<body>
+    <header style="background-image: linear-gradient(to bottom right, var(--color2), var(--color3));">
+        <div class="wrap">
+            <div style="overflow: auto; padding: 5vh 0;">
+                <div class="logo">
+                    <span>เสือ กฤติน</span>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">รหัสลับ</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div style="overflow: auto; padding: 5vh 0;">
+                <article>
+                    <h1>รหัสลับ</h1>
+                    <p></p>
+                </article>
+                <section>
+                    <img src="img/bg/texture.jpg" style="width: 100%;">
+                </section>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <div class="wrap">
+            <div class="grid-container">
+                <div class="g1" style="margin: 50px 50px; text-align: center;">
+                    <h1>แป้นพิมพ์ภาษาไทย ↔ อังกฤษ</h1>
+                    <br>
+                    <input style="font-size: 20px;" id="rawdata" placeholder="ข้อความ">
+                    <br><br>
+                    <button type="button" style="font-size: 20px;" onclick="lg()"> แปลง </button>
+                    <br><br>
+                    <span style="font-size: 20px;" id="lg_result">ผลลัพธ์ : </span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- END MAIN -->
+
+    <footer style="background-image: linear-gradient(to bottom right, var(--color2), var(--color3));">
+        <div class="wrap">
+            <nav>
+                <ul>
+                    <li><a href="#">รหัสลับ</a></li>
+                </ul>
+            </nav>
+            <article>
+                <p>TulipTGR</p>
+            </article>
+        </div>
+    </footer>
+</body>
+
+<style>
+     :root {
+        --color1: white;
+        --color2: #232526;
+        --color3: #414345;
+    }
+    
+    header nav ul li a:hover {
+        text-decoration: underline;
+        color: yellowgreen;
+    }
+    
+    main * {
+        color: #232526;
+    }
+</style>
+
+</html>

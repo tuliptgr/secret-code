@@ -1,0 +1,182 @@
+/* ROOT */
+
+:root {
+    --color1: #212121;
+    --color2: lightgray;
+    --mainbg: whitesmoke;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: var(--color1);
+}
+
+
+/* WRAPPER */
+
+.wrap {
+    width: 1000px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+
+/* HEADER */
+
+header {
+    width: 100%;
+    background: var(--color2);
+}
+
+header .logo {
+    float: left;
+    width: 25%;
+}
+
+header .logo span {
+    font-size: 3em;
+}
+
+
+/* --HEADER NAV */
+
+header nav {
+    float: left;
+    width: 75%;
+}
+
+header nav ul {
+    float: right;
+    list-style: none;
+}
+
+header nav ul li {
+    float: left;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    display: block;
+    font-size: 1.5em;
+    padding: 10px 20px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+/* --HEADER ARTICLE */
+
+header article {
+    float: left;
+    width: 40%;
+}
+
+header article h1 {
+    font-size: 3em;
+}
+
+header article p {
+    font-size: 2em;
+}
+
+header section {
+    float: left;
+    width: 60%;
+}
+
+
+/* MAIN */
+
+main {
+    width: 100%;
+    background: var(--mainbg);
+}
+
+
+/* FOOTER */
+
+footer {
+    background: var(--color2);
+    width: 100%;
+}
+
+
+/* --FOOTER NAV */
+
+footer nav {
+    float: left;
+    width: 70%;
+}
+
+footer nav ul {
+    list-style: none;
+}
+
+footer nav ul li {
+    float: left;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    display: block;
+    font-size: 1em;
+    padding: 10px 20px;
+}
+
+footer nav ul li a:hover {
+    text-decoration: underline;
+}
+
+footer article {
+    float: left;
+    width: 30%;
+    padding: 10px 0;
+    text-align: right;
+}
+
+
+/* MEDIA QUERY */
+
+@media(max-width:1000px) {
+    .wrap {
+        width: auto;
+        margin: 0 2.5vh;
+    }
+}
+
+@media(max-width:500px) {
+    header .logo {
+        width: 100%;
+        text-align: center;
+    }
+    header nav {
+        width: 100%;
+        text-align: center;
+    }
+    header nav ul {
+        float: none;
+    }
+    header nav ul li {
+        float: none;
+    }
+    header article {
+        width: 100%;
+    }
+    header section {
+        width: 100%;
+    }
+    footer nav {
+        width: 100%;
+        text-align: center;
+    }
+    footer nav ul li {
+        float: none;
+    }
+    footer article {
+        width: 100%;
+        text-align: center;
+    }
+}
